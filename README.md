@@ -13,4 +13,4 @@
 <hr>
 <br>
 <p>📊ERD📊</p><br>
-![image](https://github.com/user-attachments/assets/50f85d42-7155-4d34-81ef-69469f242917)
+<img src="https://github.com/user-attachments/assets/50f85d42-7155-4d34-81ef-69469f242917)">

@@ -3,8 +3,8 @@
 <hr>
 <div align="center">
 <h2>Tech Stack</h2>
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-<img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json">
+https://img.shields.io/badge/python-#3776AB.svg?&logo=python
+
 
 </div>
 <hr>

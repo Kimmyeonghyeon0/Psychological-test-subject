@@ -1,8 +1,11 @@
 <h1>심리테스트 웹앱</h1> 
 <br>
 <hr>
+<div align="center">
 <h2>Tech Stack</h2>
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>, <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="[https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white](https://github.com/badges/shields/raw/master/package.json)">
+</div>
 <hr>
 <h2>🌟introduction🌟</h2><br>
   <br>1. 참가자가 참여한 5문항의 설문 데이터 수집

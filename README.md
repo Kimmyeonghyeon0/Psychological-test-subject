@@ -4,7 +4,8 @@
 <div align="center">
 <h2>Tech Stack</h2>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="[https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white](https://github.com/badges/shields/raw/master/package.json)">
+<img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json">
+
 </div>
 <hr>
 <h2>🌟introduction🌟</h2><br>

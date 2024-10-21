@@ -1,6 +1,11 @@
 <h1>심리테스트 웹앱</h1> 
 <br>
-<h3>🌟introduction🌟</h3><br>
+<hr>
+<h2>Tech Stack</h2>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white">
+<hr>
+<h2>🌟introduction🌟</h2><br>
   <br>1. 참가자가 참여한 5문항의 설문 데이터 수집
   <br>2. 참가자의 이름, 나이, 성별을 JSON형태로 수집
   <br>3. 수집한 정보를 admin페이지에서 그래프로 확인 가능
@@ -12,5 +17,5 @@
 <br>
 <hr>
 <br>
-<p>📊ERD📊</p><br>
+<h2>📊ERD📊</h2><br>
 <img src="https://github.com/user-attachments/assets/50f85d42-7155-4d34-81ef-69469f242917">

@@ -3,9 +3,9 @@
 <hr>
 <div align="center">
 <h2>Tech Stack</h2>
-![Badge](https://img.shields.io/badge/python-#3776AB.svg?&logo=python)
-![Badge](https://img.shields.io/badge/python-CC6699.svg?&logo=python&logoColor=#3776AB)
-
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white">
+<img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white">
 </div>
 <hr>
 <h2>🌟introduction🌟</h2><br>

@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/50f85d42-7155-4d34-81ef-69469f242917)<h1>심리테스트 웹앱</h1> 
+<h1>심리테스트 웹앱</h1> 
 <br>
 <h3>🌟introduction🌟</h3><br>
   <br>1. 참가자가 참여한 5문항의 설문 데이터 수집
@@ -12,5 +12,5 @@
 <br>
 <hr>
 <br>
-<p>📊ERD📊</p>
-<img src="https://cdn-0.plantuml.com/plantuml/png/TP91IyGm48Nl_HL3xyMx1zcYi0egwwvuMNA8wT06qwHa4ikkx7ytDbj9TcbExJTltZmcMP7ZrlbU5GCNNxn5A3Tq49rHfZt0EvA3dNHOmazHG3ZxJP1B8GUk7J6e6ZFgwWxsRruUMLHCdr156WoaqNHTsY9vvUR2_0UL7q8rdn8d2zCFHgDsa1P3BZYV_PCUl8EwHGQNS8swGSikyIllCSBJvP2_gAdvpd4RAKkW_-nb6AbfH4jBJlCIKhijEYln6_-hIztdpMHHEZFEF0bJQwuEHymgrtvrqqkTkZsRLce66J3UfUJUA8KYMpmySCTJpOV4SOAmjdpeyl7vVSO7C0LXS0lblCKMR-8zJJvbx8ooxCrCJRKGI0HdjDIHpmrjBrpp5Y7brstpJeB-aLCNr4IZiKsGdefLYEXxzGi0" alt="Motorcycle" style="width: 500px;">
+<p>📊ERD📊</p><br>
+![image](https://github.com/user-attachments/assets/50f85d42-7155-4d34-81ef-69469f242917)

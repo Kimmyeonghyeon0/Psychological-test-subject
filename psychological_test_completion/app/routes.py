@@ -71,6 +71,9 @@ def submit():
     data = request.json
     quizzes = data.get("quizzes", [])
 
+    #쿠키에서 participant_id를 가져와 해당 참가자 확인 후 JSON데이터에서 퀴즈 답변목록을 받아 데이터 베이스에 저장합니다
+    #저장이 완료되면 성공메시지와 함께 결과 페이지로 리디렉션하도록 구성
+
     for quiz in quizzes:
         question_id = quiz.get("question_id")
         chosen_answer = quiz.get("chosen_answer")
@@ -102,6 +105,9 @@ def get_questions():
         .order_by(Question.order_num)
         .all()
     )
+    #활성화 상태인 -is_active == True-인 질문들만 가져와서 순서-order_num-에 따라
+    #정렬된 질문 목록을 반환
+
     questions_list = [
         {
             "id": question.id,
@@ -111,7 +117,7 @@ def get_questions():
         for question in questions
     ]
     return jsonify(questions=questions_list)
-
+    #각 질문들의 id, content, order_num 정보를 JSON 형태로 바꾼후 클라이언트에게 전달합니다
 
 @main.route("/results")
 def show_results():
@@ -136,8 +142,8 @@ def show_results():
     participants_df = pd.DataFrame(participants_data)
     quizzes_df = pd.DataFrame(quizzes_data)
 
-    # Plotly 시각화 생성
-    # 예시 1: 나이별 분포 (도넛 차트)
+    # 연령별 분포, 성별분포와 같은 통계를 Plotly 라이브러리를 사용하여 시각화
+    
     fig_age = px.pie(
         participants_df,
         names="age",
@@ -191,17 +197,17 @@ def show_results():
     # 나이대를 구분하는 함수
     def age_group(age):
         if age == 'teenage':
-            return "10s"
+            return "10대"
         elif age == 'twenty':
-            return "20s"
+            return "20대"
         elif age == 'thirty':
-            return "30s"
+            return "30대"
         elif age == 'forty':
-            return "40s"
+            return "40대"
         elif age == 'fifties':
-            return "50s"
+            return "50대"
         else:
-            return "60s+"
+            return "60대+"
 
     # 나이대 그룹 열 추가
     quizzes_df["age_group"] = quizzes_df["participant_age"].apply(age_group)
@@ -246,7 +252,7 @@ def show_results():
     # 데이터를 results.html에 전달
     return render_template("results.html", graphs_json=graphs_json)
 
-
+#관리자 로그인 기능
 @admin.route("", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -255,14 +261,16 @@ def login():
 
         admin = Admin.query.filter_by(username=username).first()
 
+        #입력된 사용자명과 비밀번호가 데이터베이스에 있는 관리자 계정과 일치하는지 확인
+
         if admin and check_password_hash(admin.password, password):
             session["admin_logged_in"] = True
             return redirect(url_for("admin.dashboard"))
+        #세션에 admin_logged_in플래그를 설정
         else:
-            flash("Invalid username or password")
+            flash("Invalid username or password")           #ID or Password가 틀릴 시 화면에 출력
 
     return render_template("admin.html")
-
 
 @admin.route("/logout")
 def logout():
@@ -273,6 +281,10 @@ def logout():
 from functools import wraps
 from flask import redirect, url_for, session
 
+#from functools import wraps ->  사용자 인증확인과 같은 추가 로직으로 래핑하는 동안 원래 함수의 메타 데이터를 보존하는데 사용
+#redirect -> 일반적으로 양식을 처리한 후 또는 특정 조건이 충족되어 사용자를 다른 페이지로 보내려는 경우 사용
+#url_for -> 쿼리와 같은 인수를 사용하여 URL생성을 처리
+
 
 def login_required(f):
     @wraps(f)
@@ -282,7 +294,7 @@ def login_required(f):
         return f(*args, **kwargs)
 
     return decorated_function
-
+#로그아웃 시 해당 세션 플래그를 삭제하고, 로그인 페이지로 리디렉션합니다.
 
 @admin.route("dashboard")
 @login_required

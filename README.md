@@ -4,7 +4,7 @@
 <div align="center">
 <h2>Tech Stack</h2>
 ![Badge](https://img.shields.io/badge/python-#3776AB.svg?&logo=python)
-
+![Badge](https://img.shields.io/badge/python-CC6699.svg?&logo=python&logoColor=#3776AB)
 
 </div>
 <hr>
